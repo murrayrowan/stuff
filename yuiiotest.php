@@ -23,8 +23,8 @@
 <h1>AJAXing Stuff</h1>
 
 <form action="yuiiotest.php" method="get">
-        Enter what you're looking for on Flickr: <input type="text" name="thing" id="search">
-        <input type="submit" id="flickrbut">
+        <!-- Enter what you're looking for on Flickr: <input type="text" name="thing" id="search"> -->
+        <input type="submit" id="flickrbut" value="ADD SOME NICE CAT PHOTOS">
 </form>
 
 
@@ -44,11 +44,11 @@ var getSomething = function(e){
 	e.preventDefault();
 
 	//get value in form field
-	var search = Y.one('#search').get('value');
+	//var search = Y.one('#search').get('value');
 
 	//  Build a URL
 		var uri = '/~murrayrowan/flickrphotos.js';
-		alert( uri );
+		//alert( uri );
 
  // Create the io callback/configuration
     var callback = {
@@ -81,7 +81,7 @@ var getSomething = function(e){
 
 		url = '<a href="http://flickr.com/photos/{owner}/{id}"><img src="http://static.flickr.com/{server}/{id}_{secret}_t.jpg"></a>';
 		var stuff = Y.one('#stuff');
-		stuff.append('<h2>Flickr ' + search + '</h2>');
+		stuff.append('<h2>Flickr Cats</h2>');
 		Y.each(data.query.results.photo, function(v)  {
                            stuff.append(Y.Lang.sub(url, v));
                         });
