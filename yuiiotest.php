@@ -9,18 +9,6 @@
 		margin-left: 30px;
 
 	}
-	#json{
-		color: green;
-		font-size: 10px;
-		}
-	pre{
-dd
-		border: 1px solid #000;
-	}
-	.subtext{
-
-		font-size: 11px;
-	}
 	ul{ list-style: none; }
 	li{ float:left;}
 	h2{ clear:left; }
@@ -74,12 +62,12 @@ var getSomething = function(e){
                 var data = [],
                     html = '', i, l;
 
-		alert(o.responseText);
+		//alert(o.responseText);
 
                 // Process the JSON data returned from the server
                 try {
                     data = Y.JSON.parse(o.responseText);
-                    alert("JSON Parse succeded!");
+                    //alert("JSON Parse succeded!");
                 }
 
                 catch (e) {
