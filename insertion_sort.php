@@ -10,7 +10,7 @@ for($i=1;$i<$count;$i++){    // $i is the index of the first unsorted element in
 	while($j>=0 && $numbers[$j] > $key){ 	 // while we're not at the start of the list AND WHILE one of the sorted elements is greater than the unsorted one
 		$numbers[$j+1] = $numbers[$j];   // swap the larger element for the next one down
 		$numbers[$j]= $key;  		 // make the current element equal to the temp value in $key to complete the swap
-		$j=$j-1;		     	 // move down to the next element in the list 
+		$j--;		     	 // move down to the next element in the list 
 	}
 }
 	return $numbers; // return the sorted list
