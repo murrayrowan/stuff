@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,29 +6,29 @@
 
 <script>
 
-var isort = function(arr) { //create function to do insertion sort
+var isort = function(arr) { 	//create function to do insertion sort
 
-var count = arr.length; // get length of array
+var count = arr.length; 	// get length of array
 
 for(var i = 1; i <= count; i++){  // loop from the second to last item in array
-  var j = i;					  // set counter j equal to i
-	var tmp = arr[i];		 	  // create a temp varialble to hold the value of the to-be-sorted array item
-	while ( arr[j] >= 0 && arr[j-1] > arr[j] ){ // loop thorugh the sorted  portion of the list from right to left swapping items where appropriate
-		arr[j] = arr[j-1];						// move larger item from left to right in sorted array
-		arr[j-1] = tmp;							// copy temp variable to array index you just moved to the right by one
-		j--;									// move down the list towards the start
+  var j = i;					  	// set counter j equal to i
+	var tmp = arr[i];		 	  	// create a temp varialble to hold the value of the to-be-sorted array item
+	while ( arr[j] >= 0 && arr[j-1] > arr[j] ){ 	// loop thorugh the sorted  portion of the list from right to left swapping items where appropriate
+		arr[j] = arr[j-1];			// move larger item from left to right in sorted array
+		arr[j-1] = tmp;				// copy temp variable to array index you just moved to the right by one
+		j--;					// move down the list towards the start
 	}
  }
-	return arr;									// return the sorted array
+	return arr;					// return the sorted array
 }
 
-var unsorted = [3,2,4,5,1,8,11,0];				// set up the array to sort
+var unsorted = [3,2,4,5,1,8,11,0];			// set up the array to sort
 
-document.write('unsorted = ' + unsorted + '<br>'); // write the unsorted arrray to the browser
+document.write('unsorted = ' + unsorted + '<br>'); 	// write the unsorted arrray to the browser
 
-var sorted = isort(unsorted);					   // call the sort function on the unsorted array
+var sorted = isort(unsorted);				// call the sort function on the unsorted array
 
-document.write('sorted = ' + sorted);			   // write the sorted arrray to the browser
+document.write('sorted = ' + sorted);			// write the sorted arrray to the browser
 
 </script>
 
