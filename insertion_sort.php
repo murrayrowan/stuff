@@ -16,7 +16,7 @@ for($i=1; $i<$count; $i++){  // $i is the index of the first unsorted element in
 	return $numbers; // return the sorted list
 }
 
-$numbers = array(3,2,4,5,1,8,11,0);
+$numbers = array(3,2,4,5,1,8,11,0); // create array to sort
 
 print_r( $numbers ); // print the unsorted list
 
