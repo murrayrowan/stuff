@@ -22,7 +22,7 @@ print_r( $numbers ); // print the unsorted list
 
 $sorted = insertion_sort( $numbers ); // run the list through the function
 
-print("<br>After sorting by using insertion sort<br>");
+print('<br>After sorting by using insertion sort<br>');
 print_r($sorted); // print the sorted list
 
 ?>
